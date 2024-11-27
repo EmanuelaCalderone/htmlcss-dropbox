@@ -157,3 +157,9 @@ h2{
     height:500px;
 }
 
+.team-box{
+    width:80%;
+    padding:30px;
+    height:70px;
+    border:1px solid;
+}

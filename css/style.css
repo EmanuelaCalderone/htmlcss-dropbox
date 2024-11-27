@@ -41,7 +41,6 @@ header {
     border:1px solid;
 }
 
-
 .navbar-header ul li{
     display:flex;
     align-items:center;
@@ -51,3 +50,25 @@ header {
     /*debug*/
     border:1px solid;
 }
+
+.jumbotron {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /*debug*/
+    height:500px;
+    border:1px solid;
+}
+
+h1 {
+    border:1px solid;
+}
+
+.p-jumbo{
+    border:1px solid;
+}
+
+.image-jumbo{
+    border:1px solid;
+}
+

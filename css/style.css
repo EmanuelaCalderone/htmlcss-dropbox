@@ -36,12 +36,18 @@ header {
     align-items:center;
     justify-content:space-between;
     flex-basis:25%;
-    padding:15px;
+    padding:10px;
     /*debug*/
     border:1px solid;
 }
 
-/*debug*/
+
 .navbar-header ul li{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-basis:20%;
+    list-style-type:none;
+    /*debug*/
     border:1px solid;
 }

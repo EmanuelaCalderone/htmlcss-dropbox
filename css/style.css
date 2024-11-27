@@ -143,6 +143,8 @@ h2{
     flex-direction:column;  
     justify-content:space-around;
     width:40%;
+    padding:20px;
+    margin:20px;
     border:1px solid rgb(186, 181, 181);
 }
 

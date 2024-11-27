@@ -64,14 +64,14 @@ header {
 
 h1 {
     display:flex;
-    justify-content:center;
+    justify-content:start;
     align-items:center;  
     width:60%;
 }
 
 .jumbo-intro{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     width:60%;
     /*debug*/
@@ -82,31 +82,34 @@ h1 {
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-basis:40%;
+    width:30%;
+    height:200px;
 }
 
 .jumbo-image{
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-basis:60%;
+    width:60%;
+    height:200px;
 }
 
 .plan{
     display:flex;
     flex-direction:column;
-    align-content:space-around;
     align-items:center;
+    justify-content: space-between;
     width:60%;
     /*debug*/
     height:800px;
+    padding:20px;
 }
 
 h2{
     display:flex;
-    justify-content:center;
+    justify-content:start;
     align-items:center;  
-    width:60%;
+    width:80%;
     /*debug*/
     height:70px;
 }
@@ -138,6 +141,7 @@ h2{
 .partner {
     display:flex;
     justify-content:center;
+    align-items:center;
     width:60%;
     /*debug*/
     height:400px;
@@ -155,22 +159,13 @@ h2{
     height:300px;
 }
 
-.operations{
-    display:flex;
-    flex-direction:column;
-    justify-content:start;
-    align-items:center;
-    width:100%;
-    /*debug*/
-    height:800px;
-}
-
-.operation-card{
+.operation{
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
-    align-content:center;
+    justify-content: space-between;
     width:60%;
+    height:800px;
+    padding:20px;
 }
 
 .card-business{

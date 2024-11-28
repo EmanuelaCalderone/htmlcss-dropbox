@@ -204,11 +204,6 @@ h2{
     border: 1px solid rgb(186, 181, 181);
 }
 
-.operation {
-    
-    background:blue;
-}
-
 .operation-content{
     margin:0 auto;
     display:flex;
@@ -220,6 +215,7 @@ h2{
 }
 
 .card-business{
+    margin-top:40px;
     padding:10px;
     width:33%;
 }
@@ -238,9 +234,24 @@ h2{
     width:100%;
 }
 
-.card-business-p h2 {
-    font-size:20px;
+.card-business-p h3 {
     width:100%;
     margin-top:10px;
     margin-bottom:20px;
 }
+
+.operation-content h2 {
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.clients {
+    margin-top:200px;
+    width:70%;
+    height:500px;
+}
+
+.clients-content h2{
+    margin-bottom:40px;
+}
+

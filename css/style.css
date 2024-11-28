@@ -259,15 +259,17 @@ h2{
 footer {
     margin-top:200px;
     padding-bottom:50px;
-    background-color:black;    
+    background-color:black;  
 }
 
+.footer-content{
+    margin:0 auto;
+    width:80%;
+    padding:60px;
+}
 .navbar-footer{
     display:flex;
-    justify-content:center;
-    align-content:center;
-    align-items:center;
-    padding:100px;
+    justify-content:space-between;
     gap:10px;
 }
 
@@ -290,18 +292,15 @@ footer h3{
     width:10%;
     color:rgb(186, 181, 181); 
     border-top:1px solid rgb(186, 181, 181); 
-    margin-top:100px;
-    margin-bottom:30px;
-    margin-left:450px;
+    margin-top: 80px;
     padding-top:50px;
 }
 
-.choice-language p::before {
-    content: "\f57d";  
-    color: rgb(186, 181, 181); 
+.fa-earth-americas {
+    margin-right:3px;
 }
 
-.choice-language p::after {
-    content: "\f0d8";  
-    color: rgb(186, 181, 181); 
-} 
+.fa-caret-up{
+    margin-left:2px;
+}
+    

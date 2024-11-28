@@ -24,6 +24,7 @@ header {
 
 .navbar-header {
     display:flex;
+    align-items:center;
     justify-content:space-between;
     width:100%;
     padding-left:5px;
@@ -49,61 +50,66 @@ header {
     text-decoration:none;
     color:black;
 }
-
-.blue-button{
-    background-color:blue;
+button{
+    background-color:#0361FE;
     color:white;
-    text-decoration:none;
+    border:none;
     padding:5px;
 }
 
-.container{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+.jumbotron {
+    width:100%;
+    background-color:#B4D0E6;
+    height:700px;
 }
 
-.jumbotron {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items:center;
-    background-color:#B4D0E6;
-    width: 100%;
-    height:500px;
+.jumbo-content {
+    margin:0 auto;
+    width:80%;
+}
 
+h1 {
+    margin:0 auto;
+    width:60%;
+    font-size:65px;
+    padding-top:150px;
 }
 
 .jumbo-content{
     display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    position:relative;
-    left:0;
-    width:50%;
+    justify-content:center;
+    width:60%;
+    padding-top:30px;
 }
 
-h1 {
-    display:flex;
-    justify-content:start;
-    align-items:center;  
-    width:50%;
-    font-size:60px;
+.jumbo-paragraph{
+    width:30%;
+}
+.jumbo-paragraph > * {
+    margin-bottom:20px;
 }
 
-.jumbo-content img {
-    position:absolute;
-    top:0;
-    left:100%;
+.fa-arrow-down {
+    margin-top:60px;
+    font-size:50px;
+}
+
+.jumbo-image{
+    width:70%;
+}
+
+.jumbo-image img {
     max-width:100%;
 }
 
+/*plan*/
+
+.container {
+    margin:0 auto;
+    width:50%;
+}
+
 .plan{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width:100%;
     /*debug*/
     height:1000px;
     margin-top:100px;
@@ -111,16 +117,12 @@ h1 {
 }
 
 h2{
-    display:flex;
-    justify-content:start;
-    align-items:center;  
     font-size:35px;
     margin-top:40px;
-    width:50%;
+    
 }
 
 .choice {
-    width:50%;
     margin-top:30px;
     display:flex;
     gap:10px;
@@ -129,98 +131,26 @@ h2{
 .column{
     display:flex;
     align-content: space-between; 
-    gap:10px;
-    width:50%;
+    gap:40px;
     margin-top:40px;
     height:800px;
 }
 
 .head{
     text-align:center;
+    border-bottom:1px solid rgb(186, 181, 181);
+}
+
+.check {
+    color:blue;
 }
 
 .card{
     display:flex;
     flex-direction:column;  
     justify-content:space-around;
-    width:35%;
-    padding:15px;
-    border:1px solid rgb(186, 181, 181);
-}
-
-.head{
-    border-bottom:1px solid rgb(186, 181, 181);
-}
-
-.card h4 {
-    border-bottom: 1px solid rgb(186, 181, 181);
-    width:40%;
-}
-
-.team-box{
-    width:80%;
-    /*debug*/
-    height:150px;
-}
-
-.partner {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    width:60%;
-    /*debug*/
-    height:400px;
-}
-
-.partner-image{
-    max-width:100%;
-    /*debug*/
-    height:300px;
-}
-
-.partner-p{
-    width:20%;
-    /*debug*/
-    height:300px;
-}
-
-.operation{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    width:60%;
-    height:800px;
-    padding:20px;
-}
-
-.card-business{
-    width:32%;
-    /*debug*/
-    height:300px;
-}
-
-.discover-more {
-    width:60%;
-    margin-bottom:40px;
-}
-
-footer {
-    display:flex;
-    justify-content:center;
-    width:100%;
-}
-.navbar-footer{
-    display:flex;
-    justify-content:space-between;
     align-content:center;
-    align-items:center;
-    width:60%;
-    /*debug*/
-    height:200px;
-}
-
-
-ul {
-    list-style-type:none;
+    width:33%;
+    padding: 5px 30px;
+    border:1px solid rgb(186, 181, 181);
 }

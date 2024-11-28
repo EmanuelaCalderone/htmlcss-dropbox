@@ -111,7 +111,6 @@ h1 {
 
 .plan{
     /*debug*/
-    height:1000px;
     margin-top:100px;
     border-top:1px solid rgb(186, 181, 181);
 }
@@ -172,4 +171,34 @@ h2{
 
 .enterprise > :last-child {
     margin-top: 20px;
+}
+
+.partner-content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    height:700px;
+}
+
+.partner-image{
+    width:60%;
+}
+
+.partner-image img{
+    max-width:100%;
+}
+
+.partner-p{
+    width:40%;
+}
+
+.partner-p p {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.partner-p button{
+    background-color:white;
+    color:black;
 }

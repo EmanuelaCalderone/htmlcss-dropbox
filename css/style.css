@@ -8,37 +8,43 @@ body * {
     font-family:"Open Sans";
 }
 
+/*header*/
 header {
    position:fixed;
+   display:flex;
+   justify-content:center;
    background-color:white;
-    width:100%;
-    height:70px;
+   width:100%;
+   height:70px;
+   border:1px solid rgb(186, 181, 181);
 }
 
+/*logo header*/
 .logo {
     display:flex;
     justify-content:center;
-    /*debug*/
-    padding:10px;
 }
 
+/*navbar*/
 .navbar-header {
     display:flex;
-    align-items:center;
+    align-content:center;
     justify-content:space-between;
     width:100%;
-    padding-left:5px;
-    padding-right:15px;
-    font-size:12px;
+    font-size:13px;
+    margin-right:10px;
+    margin-left:10px;
 }
 
+/*navbar sx e dx*/
 .navbar-header ul {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
     width:25%;
 }
 
+/*voci navbar*/
 .navbar-header ul li{
     display:flex;
     justify-content:space-between;
@@ -46,17 +52,29 @@ header {
     list-style-type:none;
 }
 
+/*bordo inferiore al passaggio del mouse*/
+.underline:hover{
+    border-bottom:1px solid black;
+}
+
 .navbar-header ul li a {
     text-decoration:none;
     color:black;
 }
+
+/*tutti i bottoni*/
 button{
     background-color:#0361FE;
     color:white;
     border:none;
-    padding:5px;
+    padding:8px;
 }
 
+button:hover{
+    background-color:rgba(0, 0, 255, 0.266);
+}
+
+/*jumbotron*/
 .jumbotron {
     width:100%;
     background-color:#B4D0E6;
@@ -68,6 +86,7 @@ button{
     width:80%;
 }
 
+/*titolo principale*/
 h1 {
     margin:0 auto;
     width:60%;
@@ -75,6 +94,7 @@ h1 {
     padding-top:150px;
 }
 
+/*contenuto principale jumbotron*/
 .jumbo-content{
     display:flex;
     justify-content:center;
@@ -82,18 +102,22 @@ h1 {
     padding-top:30px;
 }
 
+/*blocco testo jumbotron*/
 .jumbo-paragraph{
     width:30%;
 }
+
 .jumbo-paragraph > * {
     margin-bottom:20px;
 }
 
+/*freccia jumbotron*/
 .fa-arrow-down {
-    margin-top:60px;
+    margin-top:40px;
     font-size:50px;
 }
 
+/*blocco immagine jumbotron*/
 .jumbo-image{
     width:70%;
 }
@@ -102,85 +126,164 @@ h1 {
     max-width:100%;
 }
 
-/*plan*/
+/*blocco vuoto per bordo inferiore jumbotron*/
+.white{
+    border-top:1px solid rgb(218, 211, 211);
+    height:40px;
+    width:100%;
+    margin-top:100px;
+}
 
+/*container*/
 .container {
     margin:0 auto;
     width:50%;
 }
 
+/*sezione plan*/
 .plan{
-    /*debug*/
-    margin-top:100px;
-    border-top:1px solid rgb(186, 181, 181);
+    margin-top:40px;
 }
 
+/*titolo secondario*/
 h2{
     font-size:35px;
-    margin-top:40px;
-    
+    padding-bottom:40px;
 }
 
+/*radio button*/
 .choice {
-    margin-top:30px;
-    display:flex;
-    gap:10px;
+    font-size:14px;
 }
 
+/*secondo radio button*/
+.yearly-invoicing {
+    margin-left:30px;
+}
+
+/*colonne*/
 .column{
     display:flex;
-    align-content: space-between; 
     gap:40px;
     margin-top:40px;
-    height:800px;
 }
 
-.head{
-    text-align:center;
+/*icone colonne*/
+.fa-solid{
+    margin-right:4px;
+}
+
+/*titolo card*/
+.card-header{
     border-bottom:1px solid rgb(186, 181, 181);
+    text-align:center;
+    padding:10px;
 }
 
-.check {
-    color:blue;
-}
-
+/*singole card*/
 .card{
-    display:flex;
-    flex-direction:column;  
-    justify-content:space-around;
-    align-content:center;
     width:33%;
-    padding: 5px 30px;
+    border:1px solid rgb(186, 181, 181);
+    padding:20px;
+    height:auto;
+}
+
+/*primo blocco card*/
+.card h3, .card h4, .period{
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.period{
+    color: rgb(186, 181, 181);
+}
+
+/*bottone card*/
+.card button{
+    width:100%;
+}
+
+/*elementi liste card e in generale*/
+li{
+    list-style-type:none; 
+}
+
+/*lista servizi offerti*/
+.services{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.services li {
+    margin-bottom:10px;
+}
+
+/*bottone card*/
+.purchase-button{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+h5{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+/*linea grigia sotto link card*/
+.purchase-line{
+    width:20%;
+    margin-top:30px;
+    margin-bottom:40px;
+    border-bottom: 1px solid rgb(186, 181, 181);
+}
+
+/*lista dei vantaggi*/
+.pro li {
+    margin-left:2px;
+    padding:5px;
+}
+
+/*spunta blu*/
+.check:before {
+    content:"\2713";
+    color:blue;
+    margin-right:10px;
+}
+
+/*blocco enterprise*/
+.contact-office {
+    margin-top:50px;
     border:1px solid rgb(186, 181, 181);
 }
 
-.team {
-    margin-top:40px;
-    border:1px solid rgb(186, 181, 181);
-}
-
-.team-body{
+/*blocco enterprise + bottone*/
+.enterprise-office{
     display:flex;
     justify-content:space-between;
-    align-items:center;
 }
 
 .enterprise>*{
-    padding:10px;
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .enterprise > :last-child {
     margin-top: 20px;
+    margin-bottom:20px;
 }
 
+/*sezione partner*/
 .partner-content {
     display:flex;
     align-items:center;
     justify-content:center;
     gap:40px;
-    height:700px;
+    margin-top:200px;
+    margin-bottom:150px;
 }
 
+/*immagine sezione partner*/
 .partner-image{
     width:70%;
 }
@@ -189,37 +292,41 @@ h2{
     max-width:100%;
 }
 
-.partner-p{
+/*blocco testo sezione partner*/
+.partner-text{
     width:30%;
 }
 
-.partner-p p {
+.partner-text p {
     margin-top:10px;
     margin-bottom:20px;
 }
 
-.partner-p button{
+/*bottone sezione partner*/
+.partner-text button{
     background-color:white;
     color:black;
-    border: 1px solid rgb(186, 181, 181);
+    border: 1px solid black;
+    padding:15px;
 }
 
+/*blocco card sezione operation*/
 .operation-content{
     margin:0 auto;
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
     align-items:center;
     background-color:white;
-    width:100%
 }
 
+/*singole card*/
 .card-business{
     margin-top:40px;
     padding:10px;
     width:33%;
 }
 
+/*immagine card*/
 .card-business-image {
     width:100%;
     height:60%;
@@ -229,53 +336,44 @@ h2{
     max-width:100%;
 }
 
-.card-business-p {
-    height:40%;
-    width:100%;
-}
-
+/*tiotli card*/
 .card-business-p h3 {
-    width:100%;
     margin-top:10px;
     margin-bottom:20px;
 }
 
 .operation-content h2 {
-    font-size:35px;
     margin-bottom:30px;
 }
 
+/*sezione clienti*/
 .clients {
     margin-top:200px;
     width:70%;
 }
 
+/*titolo sezione clienti*/
 .clients-content h2{
     margin-bottom:40px;
 }
 
-
-
+/*footer*/
 footer {
     margin-top:200px;
-    padding-bottom:50px;
     background-color:black;  
 }
 
+/*contenuto footer*/
 .footer-content{
     margin:0 auto;
-    width:80%;
+    width:60%;
     padding:60px;
 }
+
+/*navbar footer*/
 .navbar-footer{
     display:flex;
     justify-content:space-between;
-    gap:10px;
-}
-
-
-.navbar-footer ul {
-    list-style-type:none;    
 }
 
 .navbar-footer li {
@@ -283,24 +381,28 @@ footer {
     color:rgb(186, 181, 181); 
 }
 
+/*prime voci navbar footer*/
 footer h3{
     color:white;
     margin-bottom:20px;
 }
 
+/*blocco scelta lingua*/
 .choice-language {
-    width:10%;
+    width:15%;
     color:rgb(186, 181, 181); 
     border-top:1px solid rgb(186, 181, 181); 
     margin-top: 80px;
-    padding-top:50px;
+    padding-top:20px;
 }
 
+/*icona pianeta blocco scelta lingua*/
 .fa-earth-americas {
-    margin-right:3px;
+    margin-right:8px;
 }
 
+/*icona freccia blocco scelta lingua*/
 .fa-caret-up{
-    margin-left:2px;
+    margin-left:5px;
 }
     

@@ -183,9 +183,11 @@ h2{
 /*singole card*/
 .card{
     width:33%;
-    border:1px solid rgb(186, 181, 181);
-    padding:20px;
-    height:auto;
+    border:1px solid rgb(186, 181, 181);   
+}
+
+.card-text{
+    padding: 0 15px;
 }
 
 /*primo blocco card*/
